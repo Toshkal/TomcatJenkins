@@ -7,6 +7,7 @@
     <groupId>org.example</groupId>
     <artifactId>TomcatJenkins</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>war </packaging>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -14,4 +15,55 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>5.3.23</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.3.23</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>5.3.23</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>5.3.23</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.thymeleaf/thymeleaf-spring5 -->
+        <dependency>
+            <groupId>org.thymeleaf</groupId>
+            <artifactId>thymeleaf-spring5</artifactId>
+            <version>3.0.15.RELEASE</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <finalName>tomcat-jenkins</finalName>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>3.1.0</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
