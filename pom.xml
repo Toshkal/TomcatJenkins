@@ -59,14 +59,7 @@
         <finalName>tomcat-jenkins</finalName>
         <pluginManagement>
             <plugins>
-                <plugin>
-                         <groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-war-plugin</artifactId>
-			<version>2.6</version>
-			<configuration>
-				<failOnMissingWebXml>false</failOnMissingWebXml>
-			</configuration>
-                         
+                <plugin>            
                     <artifactId>maven-clean-plugin</artifactId>
                     <version>3.1.0</version>
                 </plugin>
