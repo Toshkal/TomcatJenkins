@@ -5,9 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>TomcatJenkins</artifactId>
+    <artifactId>Tomcat-Jenkins</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>war </packaging>
+    <packaging>war</packaging>
+
+    <name>tomcat-jenkins Maven Webapp</name>
+    <url>http://www.example.org</url>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
